@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">No Billionaires Club Podcast Cover</title>
+  <desc id="desc">Default episode cover image for No Billionaires Club podcast.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <rect x="84" y="84" width="1032" height="1032" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+  <text x="120" y="240" fill="#f8fafc" font-family="Arial, sans-serif" font-size="64" font-weight="700">No Billionaires Club</text>
+  <text x="120" y="960" fill="#38bdf8" font-family="Arial, sans-serif" font-size="120" font-weight="700">NEW EPISODE</text>
+</svg>

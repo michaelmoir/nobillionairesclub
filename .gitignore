@@ -44,3 +44,8 @@ next-env.d.ts
 
 .gitconfig
 deploy.sh
+
+# local podcast audio assets (keep placeholders/docs only)
+/public/podcasts-audio/*
+!/public/podcasts-audio/.gitkeep
+!/public/podcasts-audio/README.md

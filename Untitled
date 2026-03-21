@@ -1,8 +1,0 @@
-version: '3.8'
-services:
-  nobillionaires-site:
-    build: .
-    container_name: nobillionaires-club
-    restart: always
-    ports:
-      - "3001:3000" # Map NAS port 3001 to Container port 3000

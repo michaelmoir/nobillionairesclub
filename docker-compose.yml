@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   nobillionaires-site:
-    build: .
+    build:
+      context: .
+      network: host
     container_name: nobillionaires-club
     restart: always
     ports:

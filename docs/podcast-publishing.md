@@ -41,3 +41,18 @@ For your "simple and free" goal:
   - Can have throttling, auth edge cases, and unstable redirects
 
 If you outgrow NAS bandwidth later, keep the same metadata format and switch `audioUrl` values to a CDN/bucket.
+
+## Transcript generation (local NAS)
+
+To create transcripts from MP3 files:
+
+```bash
+./scripts/transcribe-podcasts.sh
+```
+
+This script uses a Docker Whisper image and writes `.txt` transcripts to:
+This script uses a Python container, installs Whisper + ffmpeg, and writes `.txt` transcripts to:
+
+- `content/podcast-transcripts/`
+
+After transcripts are generated, show notes can be drafted from the actual episode content.

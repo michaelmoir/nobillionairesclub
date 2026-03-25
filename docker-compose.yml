@@ -1,7 +1,19 @@
 services:
-  nobillionaires-site:
+  app:
     build: .
-    container_name: nobillionaires-club
-    ports:
-      - "3001:3000"
+    container_name: nobillionairesclub
     restart: always
+    # We don't need to expose port 3001 to Windows anymore! 
+    # The proxy will talk to it internally.
+
+  proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: mmoir-proxy
+    restart: always
+    ports:
+      - '80:80'   # Public HTTP
+      - '443:443' # Public HTTPS
+      - '81:81'   # Admin UI
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt

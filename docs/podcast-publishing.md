@@ -50,7 +50,7 @@ To create transcripts from MP3 files:
 ./scripts/transcribe-podcasts.sh
 ```
 
-The script builds a small Docker image once (`nbc-whisper`: Python + ffmpeg + `openai-whisper`), then runs Whisper with **visible progress**. During the image build you might briefly see `debconf` messages about Dialog/Readline; the Dockerfile sets non-interactive mode so those are harmless. Transcripts are written as `.txt` under:
+The script builds a small Docker image once (`nbc-whisper`: Python + ffmpeg + `openai-whisper`), then runs Whisper with **visible progress**. During the image build you might briefly see `debconf` messages about Dialog/Readline; the Dockerfile sets non-interactive mode so those are harmless. You may also see a **pip warning about running as root** in the container — that is normal for Docker. The image installs **CPU-only** PyTorch before Whisper so you avoid multi‑gigabyte NVIDIA/CUDA wheels on a typical NAS. Transcripts are written as `.txt` under:
 
 - `content/podcast-transcripts/`
 

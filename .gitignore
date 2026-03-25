@@ -16,3 +16,7 @@ build/
 # deploy.sh
 # docker-compose.yml
 # Dockerfile
+
+# Nginx Proxy Manager State
+data/
+letsencrypt/

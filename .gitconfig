@@ -1,0 +1,6 @@
+[safe]
+	directory = /volume1/docker/nobillionairesclub
+[core]
+	attributesfile = /dev/null
+	excludesfile = /dev/null
+	sharedRepository = group
